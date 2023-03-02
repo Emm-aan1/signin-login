@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 1rem;
+  background: linear-gradient(to bottom, #433A3F, #D27F5F, #564241);
+}
+
+main {
+  width: 30rem;
+  height: 35rem;
+  background-color: #d2805fc4;
+  overflow: hidden;
+  background: url('images/wood.jpg') no-repeat center/cover;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 8px 2px black;
+  mix-blend-mode: hard-light;
+}
+
+#oky {
+  display: none;
+}
+
+.sign-up {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  color: #f7f2f0;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  margin: 2em 3em 2.5em;
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+
+input {
+  width: 70%;
+  height: 2.5em;
+  background: #ece3e0;
+  display: flex;
+  justify-content: center;
+  margin: 3em auto;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding-left: 2em;
+}
+
+input::placeholder {
+  letter-spacing: 1px;
+}
+
+button {
+  width: 50%;
+  height: 3em;
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #342f32;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #fff;
+  color: #342f32;
+}
+
+.login {
+  height: 30rem;
+  background: #d2bfb9;
+  border-radius: 45%/10%;
+  transform: translateY(-13rem);
+  transition: 0.8s ease-in-out;
+}
+
+.login label {
+  color: #564241;
+  transform: scale(0.7);
+  padding-top: 1rem;
+}
+
+#oky:checked~.login {
+  transform: translateY(-35rem);
+}
+
+#oky:checked~.login label {
+  transform: scale(1.1);
+}
+
+#oky:checked~.sign-up label {
+  transform: scale(.6);
+}
