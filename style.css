@@ -22,7 +22,7 @@ main {
   background: url('images/wood.jpg') no-repeat center/cover;
   border-radius: 2rem;
   box-shadow: 1px 1px 8px 2px black;
-  mix-blend-mode: hard-light;
+  
 }
 
 #oky {
